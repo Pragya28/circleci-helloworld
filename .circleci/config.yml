@@ -1,12 +1,4 @@
 version: 2.1
-workflows:
-  welcome:
-    jobs:
-      - welcome/run
-      - print_hello
-      - print_world
-        requires:
-          - print_hello
 jobs:
   build:
     docker:
